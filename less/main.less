@@ -13,7 +13,7 @@ main {
     .section-heading {
         background: @purple;
         color: @white;
-        font-family: @source-sans;
+        font-family: @raleway;
         text-transform: uppercase;
         font-size: 2rem;
         padding: 50px 5%;
@@ -22,6 +22,19 @@ main {
             width: 51%;
             height: 100%;
             text-align: right;
+            padding: 50px 15%;
+            position: relative;
+
+            &::after {
+                height: 1px;
+                content: '';
+                width: 13%;
+                background: @salmon;
+                display: block;
+                position: absolute;
+                left: 75.25%;
+                top: 55px;
+            }
         }
     }
 

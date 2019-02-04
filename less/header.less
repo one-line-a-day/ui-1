@@ -5,12 +5,35 @@ header {
     .header-text {
         padding: 55px 5%;
 
+        @media @desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;;
+        }
+
         h1 {
             font-family: @source-sans;
             color: @white;
             font-size: 6rem;
             font-weight: 600;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            
+            @media @desktop {
+                height: 150px;
+                margin-top: 89px;
+                &::after {
+                height: 1px;
+                content: '';
+                width: 13%;
+                background: @salmon;
+                display: block;
+                position: absolute;
+                left: 102.5%;
+                top: 35px;
+            }
+
+            }
         }
 
         p {
@@ -19,6 +42,7 @@ header {
             text-transform: uppercase;
             font-size: 1.5rem;
             padding: 5px 0;
+            height: 50px;
         }
 
         button {
@@ -39,6 +63,7 @@ header {
         @media @desktop {
             width: 49%;
             text-align: right;
+            padding: 0 10% 0 0;
         }
     }
 
@@ -55,13 +80,13 @@ header {
             height: 600px;
 
             @media @desktop {
-                height: auto;
+                height: 1200px;
             }
         }
 
         @media @desktop {
             width: 49%;
-            height: 700px;
+            height: 1200px;
         }
     }
 
@@ -69,5 +94,17 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &::before {
+            height: 145.6%;
+            content: '';
+            width: 1px;
+            background: @salmon;
+            display: block;
+            position: absolute;
+            left: 45%;
+            top: 550px;
+            z-index: 100;
+        }
     }
 }

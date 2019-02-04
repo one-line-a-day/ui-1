@@ -140,12 +140,36 @@ header {
 header .header-text {
   padding: 55px 5%;
 }
+@media (min-width: 768px) {
+  header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 header .header-text h1 {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   color: #ffffff;
   font-size: 6rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  header .header-text h1 {
+    height: 150px;
+    margin-top: 89px;
+  }
+  header .header-text h1::after {
+    height: 1px;
+    content: '';
+    width: 13%;
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 102.5%;
+    top: 35px;
+  }
 }
 header .header-text p {
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -153,6 +177,7 @@ header .header-text p {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 5px 0;
+  height: 50px;
 }
 header .header-text button {
   cursor: pointer;
@@ -172,6 +197,7 @@ header .header-text button:hover {
   header .header-text {
     width: 49%;
     text-align: right;
+    padding: 0 10% 0 0;
   }
 }
 header .header-img {
@@ -188,13 +214,13 @@ header .header-img img {
 }
 @media (min-width: 768px) {
   header .header-img img {
-    height: auto;
+    height: 1200px;
   }
 }
 @media (min-width: 768px) {
   header .header-img {
     width: 49%;
-    height: 700px;
+    height: 1200px;
   }
 }
 @media (min-width: 768px) {
@@ -202,6 +228,17 @@ header .header-img img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  header::before {
+    height: 145.6%;
+    content: '';
+    width: 1px;
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: 550px;
+    z-index: 100;
   }
 }
 main {
@@ -218,7 +255,7 @@ main {
 main .section-heading {
   background: #442587;
   color: #ffffff;
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 50px 5%;
@@ -228,6 +265,18 @@ main .section-heading {
     width: 51%;
     height: 100%;
     text-align: right;
+    padding: 50px 15%;
+    position: relative;
+  }
+  main .section-heading::after {
+    height: 1px;
+    content: '';
+    width: 13%;
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 75.25%;
+    top: 55px;
   }
 }
 main .section-text {
@@ -298,6 +347,30 @@ footer h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  footer h2 {
+    width: 51%;
+    background: #442587;
+    color: #ffffff;
+    margin: 0;
+    text-align: right;
+    padding: 60px 15% 0 0;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 2rem;
+    position: relative;
+  }
+  footer h2::after {
+    height: 1px;
+    content: '';
+    width: 13%;
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 75.25%;
+    top: 74px;
+  }
+}
 footer h3 {
   font-family: 'Raleway', Helvetica, sans-serif;
   text-transform: uppercase;
@@ -321,4 +394,23 @@ footer p a:hover {
 footer p:last-child {
   color: #c6c6c6;
   text-align: center;
+}
+@media (min-width: 768px) {
+  footer p:last-child {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    align-content: center;
+    border-top: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  footer .desktop-div {
+    padding: 0 5%;
+  }
 }
