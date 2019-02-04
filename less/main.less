@@ -35,6 +35,18 @@ main {
                 left: 75.25%;
                 top: 55px;
             }
+
+            &::before {
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                content: '';
+                background: @salmon;
+                display: block;
+                position: absolute;
+                left: 75.25%;
+                top: 52.5px;
+            }
         }
     }
 
@@ -85,11 +97,6 @@ main {
                     max-width: 500px;
         }  
     }
-
-    // @media @desktop {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    // }
 
 }
 

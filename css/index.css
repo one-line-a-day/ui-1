@@ -170,6 +170,17 @@ header .header-text h1 {
     left: 102.5%;
     top: 35px;
   }
+  header .header-text h1::before {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    content: '';
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 102.5%;
+    top: 32.5px;
+  }
 }
 header .header-text p {
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -230,7 +241,7 @@ header .header-img img {
     align-items: center;
   }
   header::before {
-    height: 145.6%;
+    height: 150%;
     content: '';
     width: 1px;
     background: #fd5d67;
@@ -238,6 +249,19 @@ header .header-img img {
     position: absolute;
     left: 45%;
     top: 550px;
+    z-index: 100;
+  }
+  header::after {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    content: '';
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 44.9%;
+    margin-top: 550px;
+    top: 150%;
     z-index: 100;
   }
 }
@@ -277,6 +301,17 @@ main .section-heading {
     position: absolute;
     left: 75.25%;
     top: 55px;
+  }
+  main .section-heading::before {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    content: '';
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 75.25%;
+    top: 52.5px;
   }
 }
 main .section-text {
@@ -369,6 +404,17 @@ footer h2 {
     position: absolute;
     left: 75.25%;
     top: 74px;
+  }
+  footer h2::before {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    content: '';
+    background: #fd5d67;
+    display: block;
+    position: absolute;
+    left: 75.25%;
+    top: 72px;
   }
 }
 footer h3 {
