@@ -126,6 +126,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header h1 {
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  background: #3E2F5B;
+}
+header .header-text {
+  padding: 65px 10%;
+}
+header .header-text h1 {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #f8f8ff;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+header .header-text p {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #f8f8ff;
+  font-size: 1.8rem;
+}
+header .header-text button {
+  cursor: pointer;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #f8f8ff;
+  background: #3E2F5B;
+  border: 1px solid #f8f8ff;
+  border-radius: 5px;
+  margin: 20px 0 0;
+  padding: 10px;
+}
+header .header-text button:hover {
+  color: #3E2F5B;
+  background: #f8f8ff;
+}
+header .header-img {
+  width: 100%;
+  overflow: hidden;
 }

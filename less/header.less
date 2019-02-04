@@ -1,5 +1,41 @@
 header {
-    h1 {
-        font-family: @source-sans;
+    width: 100%;
+    background: @purple;
+    .header-text {
+        padding: 65px 10%;
+        h1 {
+            font-family: @source-sans;
+            color: @white;
+            font-size: 6rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: @source-sans;
+            color: @white;
+            font-size: 1.8rem;
+        }
+
+        button {
+            cursor: pointer;
+            font-family: @source-sans;
+            color: @white;
+            background: @purple;
+            border: 1px solid @white;
+            border-radius: 5px;
+            margin: 20px 0 0;
+            padding: 10px;
+            &:hover {
+                color: @purple;
+                background: @white;
+            }
+        }
     }
+
+    .header-img {
+        width: 100%;
+        overflow: hidden;
+    }
+
 }
