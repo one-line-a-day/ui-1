@@ -15,37 +15,46 @@ main {
         font-size: 1.6rem;
         line-height: 2;
         padding: 50px 5%;
-    }
-
-    form {
-        margin-top: 20px;
-
-        input {
-            font-family: @source-sans;
-            font-size: 1.6rem;
-            width: 100%;
-            height: 40px;
-            border: 2px solid @gray;
-            border-radius: 5px;
-            margin: 5px 0;
-            padding: 10px;
-            &::placeholder {
-                color: @gray;
+        form {
+            margin-top: 20px;
+    
+            input {
+                font-family: @source-sans;
+                font-size: 1.6rem;
+                width: 100%;
+                height: 40px;
+                border: 2px solid @gray;
+                border-radius: 5px;
+                margin: 5px 0;
+                padding: 10px;
+                &::placeholder {
+                    color: @gray;
+                }
+            }
+    
+            button {
+                cursor: pointer;
+                width: 100%;
+                color: @white;
+                background: @purple;
+                font-family: @source-sans;
+                border: 2px solid @purple;
+                border-radius: 5px;
+                margin: 5px 0;
+                padding: 10px;
             }
         }
+    }
 
-        button {
-            cursor: pointer;
-            width: 100%;
-            color: @white;
-            background: @purple;
-            font-family: @source-sans;
-            border: 2px solid @purple;
-            border-radius: 5px;
-            margin: 5px 0;
-            padding: 10px;
+    #start {
+        .section-text{
+            @media @tablet {
+                max-width: 500px;
+                margin: 0 auto;
+            }
         }
     }
+
 }
 
 .sr {
