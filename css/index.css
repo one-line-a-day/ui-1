@@ -168,4 +168,10 @@ header .header-text button:hover {
 header .header-img {
   width: 100%;
   overflow: hidden;
+  height: 600px;
+}
+header .header-img img {
+  position: relative;
+  left: -250px;
+  height: 600px;
 }
