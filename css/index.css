@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 header {
   width: 100%;
@@ -171,7 +172,53 @@ header .header-img {
   height: 600px;
 }
 header .header-img img {
-  position: relative;
-  left: -250px;
-  height: 600px;
+  position: cover;
+}
+main {
+  width: 100%;
+}
+main .section-heading {
+  background: #3E2F5B;
+  color: #f8f8ff;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 50px 10%;
+}
+main .section-text {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding: 50px 10%;
+}
+main form {
+  margin-top: 20px;
+}
+main form input {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 40px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+main form button {
+  cursor: pointer;
+  width: 100%;
+  color: #f8f8ff;
+  background: #3E2F5B;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  border: 2px solid #3E2F5B;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+.sr {
+  position: absolute;
+  left: -99999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }

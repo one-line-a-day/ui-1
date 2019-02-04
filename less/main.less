@@ -1,0 +1,54 @@
+main {
+    width: 100%;
+
+    .section-heading {
+        background: @purple;
+        color: @white;
+        font-family: @source-sans;
+        text-transform: uppercase;
+        font-size: 2rem;
+        padding: 50px 10%;
+    }
+
+    .section-text {
+        font-family: @source-sans;
+        font-size: 1.6rem;
+        line-height: 2;
+        padding: 50px 10%;
+    }
+
+    form {
+        margin-top: 20px;
+
+        input {
+            font-family: @source-sans;
+            font-size: 1.6rem;
+            width: 100%;
+            height: 40px;
+            border: 2px solid @gray;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            width: 100%;
+            color: @white;
+            background: @purple;
+            font-family: @source-sans;
+            border: 2px solid @purple;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+    }
+}
+
+.sr {
+    position: absolute;
+    left: -99999px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }

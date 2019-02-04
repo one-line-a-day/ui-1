@@ -13,7 +13,7 @@
         <div class="header-text">
             <h1>One Line a Day</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-            <button>Start Your Journal Now!</button>
+            <a href="#start"><button>Start Your Journal Now!</button></a>
         </div>
         <div class="header-img">
             <img src="img/journal.jpeg" alt="Photo of a phone resting on a journal">
@@ -21,32 +21,35 @@
     </header>
     <main>
         <section>
-            <h2>About</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo reiciendis tempore minima nesciunt earum optio aliquid quae qui consequuntur impedit ullam unde quibusdam amet, possimus similique vero voluptate debitis!</p>
+            <h2 class="section-heading">About</h2>
+            <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo reiciendis tempore minima nesciunt earum optio aliquid quae qui consequuntur impedit ullam unde quibusdam amet, possimus similique vero voluptate debitis!</p>
         </section>
         <section>
-            <h2>Feature 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro repudiandae sequi optio eveniet, omnis delectus adipisci commodi quis sapiente tempora alias reprehenderit dolore illum, impedit culpa aperiam dolorem rerum.</p>
+            <h2 class="section-heading">Feature 1</h2>
+            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro repudiandae sequi optio eveniet, omnis delectus adipisci commodi quis sapiente tempora alias reprehenderit dolore illum, impedit culpa aperiam dolorem rerum.</p>
         </section>
         <section>
-            <h2>Feature 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit? Perspiciatis explicabo veniam hic deleniti architecto nam tempore voluptates deserunt quaerat facilis quod autem maxime itaque, iure, repellendus neque minima?</p>
+            <h2 class="section-heading">Feature 2</h2>
+            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit? Perspiciatis explicabo veniam hic deleniti architecto nam tempore voluptates deserunt quaerat facilis quod autem maxime itaque, iure, repellendus neque minima?</p>
         </section>
-        <section>
-            <h2>Start Your Journal</h2>
-            <form action="#">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="email">
-                </div>
-                <div>
-                    <button type="submit">Get Started</button>
-                </div>
-            </form>
+        <section id="start">
+            <h2 class="section-heading">Start Your Journal</h2>
+            <div class="section-text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <form action="#">
+                    <div>
+                        <label for="name" class="sr">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="mail" class="sr">Email:</label>
+                        <input type="email" id="mail" name="email" placeholder="Your Email Address">
+                    </div>
+                    <div>
+                        <button type="submit">Get Started</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
