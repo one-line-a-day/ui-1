@@ -168,6 +168,12 @@ header .header-text button:hover {
   color: #442587;
   background: #ffffff;
 }
+@media (min-width: 768px) {
+  header .header-text {
+    width: 49%;
+    text-align: right;
+  }
+}
 header .header-img {
   width: 100%;
   overflow: hidden;
@@ -180,8 +186,34 @@ header .header-img img {
   object-fit: cover;
   height: 600px;
 }
+@media (min-width: 768px) {
+  header .header-img img {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  header .header-img {
+    width: 49%;
+    height: 700px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 main {
   width: 100%;
+}
+@media (min-width: 768px) {
+  main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #442587;
+  }
 }
 main .section-heading {
   background: #442587;
@@ -191,11 +223,19 @@ main .section-heading {
   font-size: 2rem;
   padding: 50px 5%;
 }
+@media (min-width: 768px) {
+  main .section-heading {
+    width: 51%;
+    height: 100%;
+    text-align: right;
+  }
+}
 main .section-text {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 2;
   padding: 50px 5%;
+  background: #ffffff;
 }
 main .section-text form {
   margin-top: 20px;
@@ -224,11 +264,16 @@ main .section-text form button {
   margin: 5px 0;
   padding: 10px;
 }
-@media (min-width: 480px) {
-  main #start .section-text {
-    max-width: 500px;
-    margin: 0 auto;
+@media (min-width: 768px) {
+  main .section-text {
+    width: 49%;
+    margin: 0;
   }
+}
+main #start p,
+main #start input,
+main #start button {
+  max-width: 500px;
 }
 .sr {
   position: absolute;

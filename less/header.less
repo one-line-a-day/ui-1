@@ -1,8 +1,10 @@
 header {
     width: 100%;
     background: @purple;
+
     .header-text {
         padding: 55px 5%;
+
         h1 {
             font-family: @source-sans;
             color: @white;
@@ -33,6 +35,11 @@ header {
                 background: @white;
             }
         }
+
+        @media @desktop {
+            width: 49%;
+            text-align: right;
+        }
     }
 
     .header-img {
@@ -46,7 +53,21 @@ header {
         img {
             object-fit: cover;
             height: 600px;
+
+            @media @desktop {
+                height: auto;
+            }
+        }
+
+        @media @desktop {
+            width: 49%;
+            height: 700px;
         }
     }
 
+    @media @desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

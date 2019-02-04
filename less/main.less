@@ -1,6 +1,15 @@
 main {
     width: 100%;
 
+    section{
+        @media @desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: @purple;
+        }
+    }
+
     .section-heading {
         background: @purple;
         color: @white;
@@ -8,6 +17,12 @@ main {
         text-transform: uppercase;
         font-size: 2rem;
         padding: 50px 5%;
+
+        @media @desktop {
+            width: 51%;
+            height: 100%;
+            text-align: right;
+        }
     }
 
     .section-text {
@@ -15,6 +30,7 @@ main {
         font-size: 1.6rem;
         line-height: 2;
         padding: 50px 5%;
+        background: @white;
         form {
             margin-top: 20px;
     
@@ -44,16 +60,23 @@ main {
                 padding: 10px;
             }
         }
+
+        @media @desktop {
+            width: 49%;
+            margin: 0;
+        }
     }
 
     #start {
-        .section-text{
-            @media @tablet {
-                max-width: 500px;
-                margin: 0 auto;
-            }
-        }
+        p, input, button {
+                    max-width: 500px;
+        }  
     }
+
+    // @media @desktop {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
 
 }
 
