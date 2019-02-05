@@ -509,3 +509,50 @@ footer p:last-child {
 .carousel .active {
   display: block;
 }
+.tabs {
+  width: 100%;
+}
+.tabs .actual-tabs {
+  display: flex;
+  background-color: #ffffff;
+}
+.tabs .actual-tab {
+  padding: 0 2.5%;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #fdb9ac;
+  border-right: 1px solid #ffffff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.tabs .actual-tab:hover {
+  background-color: #fd5d67;
+}
+.tabs .tab-selected {
+  z-index: 2;
+  background-color: #fd5d67;
+  color: #ffffff;
+}
+.tabs .tab-selected:hover {
+  background-color: #442587;
+}
+.tabs .tabs-content {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 5% 0;
+  background-color: #c6c6c6;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
