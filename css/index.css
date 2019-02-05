@@ -465,18 +465,12 @@ footer p:last-child {
 }
 .carousel {
   width: 100%;
-  max-height: 200px;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-}
-@media (min-width: 500px) {
-  .carousel {
-    max-height: 400px;
-  }
 }
 .carousel .left-btn,
 .carousel .right-btn {
