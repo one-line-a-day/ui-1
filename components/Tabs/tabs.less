@@ -1,13 +1,24 @@
 .tabs {
     width: 100%;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop {
+        flex-direction: row;
+    }
 
     .actual-tabs {
         display: flex;
         background-color: @white;
+
+        @media @desktop {
+            flex-direction: column;
+        }
     }
 
     .actual-tab {
+        position: relative;
         padding: 0 2.5%;
         text-align: center;
         font-size: 2rem;
@@ -19,6 +30,38 @@
         cursor: pointer;
         &:hover {
             background-color: @salmon;
+        }
+
+        @media @desktop {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 15px;
+            border-right: none;
+            border-bottom: 1px solid @white;
+            height: 70px;
+            width: 40px;
+            padding: 0;
+            text-align: left;
+
+            &:first-child {
+                p {
+                    left: -5%;
+                }
+            }
+
+            &:last-child {
+                p {
+                    left: -15%;
+                }
+            }
+        }
+
+        p {
+            @media @desktop {
+                position: absolute;
+                top: 22%;
+                left: -24%;
+                transform: rotate(-450deg);
+            }
         }
     }
 
@@ -36,7 +79,8 @@
         height: 300px;
         display: flex;
         justify-content: center;
-        padding: 60px 5% 0;
+        align-items: center;
+        padding: 0 5%;
         background-color: @gray;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;

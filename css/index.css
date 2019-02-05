@@ -244,7 +244,7 @@ header .header-img img {
     align-items: center;
   }
   header::before {
-    height: 75%;
+    height: 80%;
     content: '';
     width: 1px;
     background: #fd5d67;
@@ -262,9 +262,9 @@ header .header-img img {
     background: #fd5d67;
     display: block;
     position: absolute;
-    left: 44.89%;
+    left: 44.85%;
     margin-top: 550px;
-    top: 75%;
+    top: 80%;
     z-index: 100;
   }
 }
@@ -540,12 +540,25 @@ footer p:last-child {
 .tabs {
   width: 100%;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .tabs {
+    flex-direction: row;
+  }
 }
 .tabs .actual-tabs {
   display: flex;
   background-color: #ffffff;
 }
+@media (min-width: 800px) {
+  .tabs .actual-tabs {
+    flex-direction: column;
+  }
+}
 .tabs .actual-tab {
+  position: relative;
   padding: 0 2.5%;
   text-align: center;
   font-size: 2rem;
@@ -558,6 +571,32 @@ footer p:last-child {
 }
 .tabs .actual-tab:hover {
   background-color: #fd5d67;
+}
+@media (min-width: 800px) {
+  .tabs .actual-tab {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    height: 70px;
+    width: 40px;
+    padding: 0;
+    text-align: left;
+  }
+  .tabs .actual-tab:first-child p {
+    left: -5%;
+  }
+  .tabs .actual-tab:last-child p {
+    left: -15%;
+  }
+}
+@media (min-width: 800px) {
+  .tabs .actual-tab p {
+    position: absolute;
+    top: 22%;
+    left: -24%;
+    transform: rotate(-450deg);
+  }
 }
 .tabs .tab-selected {
   z-index: 2;
@@ -572,7 +611,8 @@ footer p:last-child {
   height: 300px;
   display: flex;
   justify-content: center;
-  padding: 60px 5% 0;
+  align-items: center;
+  padding: 0 5%;
   background-color: #c6c6c6;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
