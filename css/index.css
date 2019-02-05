@@ -362,6 +362,34 @@ main #start input,
 main #start button {
   max-width: 500px;
 }
+main .apps {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  main .apps {
+    flex-direction: row;
+  }
+}
+@media (min-width: 500px) and (min-width: 800px) {
+  main .apps {
+    display: none;
+  }
+}
+main .apps img {
+  width: 200px;
+}
+main .apps img:first-child {
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  main .apps img:first-child {
+    margin-bottom: 0;
+  }
+}
 .sr {
   position: absolute;
   left: -99999px;

@@ -98,6 +98,33 @@ main {
         }  
     }
 
+    .apps {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media @tablet {
+            flex-direction: row;
+
+            @media @desktop {
+                display: none;
+            }
+        }
+
+        img {
+            width: 200px;
+            &:first-child {
+                margin-bottom: 10px;
+
+                @media @tablet {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
 }
 
 .sr {
