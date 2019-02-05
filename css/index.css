@@ -262,7 +262,7 @@ header .header-img img {
     background: #fd5d67;
     display: block;
     position: absolute;
-    left: 44.75%;
+    left: 44.89%;
     margin-top: 550px;
     top: 75%;
     z-index: 100;
@@ -314,7 +314,7 @@ main .section-heading {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 52.5px;
+    top: 53px;
   }
 }
 main .section-text {
@@ -462,4 +462,32 @@ footer p:last-child {
   footer .desktop-div {
     padding: 0 5%;
   }
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .left-btn,
+.carousel .right-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #442587;
+  background-color: #fd5d67;
+  opacity: 0.5;
+  font-size: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-btn:hover,
+.carousel .right-btn:hover {
+  color: #fd5d67;
+  background-color: #442587;
 }
