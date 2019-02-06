@@ -285,6 +285,7 @@ main .section-heading {
   color: #ffffff;
   font-family: 'Raleway', Helvetica, sans-serif;
   text-transform: uppercase;
+  text-align: center;
   font-size: 2.5rem;
   padding: 50px 5%;
 }
@@ -293,7 +294,7 @@ main .section-heading {
     width: 51%;
     height: 100%;
     text-align: right;
-    padding: 50px 15% 0 20%;
+    padding: 0 15% 0 20%;
     position: relative;
   }
   main .section-heading::after {
@@ -304,7 +305,7 @@ main .section-heading {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 86px;
+    top: 35px;
   }
   main .section-heading::before {
     height: 5px;
@@ -315,7 +316,7 @@ main .section-heading {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 84px;
+    top: 33px;
   }
 }
 main .section-text {
@@ -364,6 +365,7 @@ main .section-text form button:focus {
   main .section-text {
     width: 49%;
     margin: 0;
+    border-bottom: 2px dotted #c6c6c6;
   }
 }
 main #start p,
@@ -381,11 +383,6 @@ main .apps {
 @media (min-width: 500px) {
   main .apps {
     flex-direction: row;
-  }
-}
-@media (min-width: 500px) and (min-width: 800px) {
-  main .apps {
-    display: none;
   }
 }
 main .apps img {
@@ -494,6 +491,7 @@ footer p:last-child {
 @media (min-width: 800px) {
   footer .desktop-div {
     width: 49%;
+    margin-top: 40px;
     padding: 0 5%;
   }
 }
@@ -509,11 +507,9 @@ footer .social a:hover {
 }
 .carousel {
   width: 100%;
+  height: 300px;
   overflow: hidden;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 40px;
 }
 .carousel .left-btn,
@@ -540,18 +536,23 @@ footer .social a:hover {
   top: 50%;
   left: 15px;
   transform: translate(0, -50%);
+  z-index: 100;
 }
 .carousel .right-btn {
   top: 50%;
   right: 15px;
   transform: translate(0, -50%);
+  z-index: 100;
 }
 .carousel .carousel-img {
+  position: absolute;
   width: 100%;
-  display: none;
+  right: -100%;
+  transition: all 0.25s;
 }
 .carousel .active {
-  display: block;
+  right: 0;
+  width: 100%;
 }
 .tabs {
   width: 100%;
