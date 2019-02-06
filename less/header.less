@@ -14,7 +14,7 @@ header {
         h1 {
             font-family: @source-sans;
             color: @white;
-            font-size: 6rem;
+            font-size: 6.5rem;
             font-weight: 600;
             padding-bottom: 20px;
             position: relative;
@@ -49,18 +49,30 @@ header {
             }
         }
 
-        p {
+        h2 {
             font-family: @raleway;
             color: @white;
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: 3rem;
             padding: 5px 0;
             height: 50px;
+        }
+
+        p {
+            color: @white;
+            font-family: @source-sans;
+            font-size: 1.8rem;
+            margin: 20px 0;
+
+            @media @desktop {
+                margin-left: 40px;
+            }
         }
 
         button {
             cursor: pointer;
             font-family: @source-sans;
+            font-size: 2rem;
             color: @white;
             background: @purple;
             border: 1px solid @white;
@@ -70,6 +82,7 @@ header {
             &:hover {
                 color: @purple;
                 background: @white;
+                font-weight: 700;
             }
         }
 
@@ -108,30 +121,30 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        &::before {
-            height: 80%;
-            content: '';
-            width: 1px;
-            background: @salmon;
-            display: block;
-            position: absolute;
-            left: 45%;
-            top: 550px;
-            z-index: 100;
-        }
+        // &::before {
+        //     height: 100%;
+        //     content: '';
+        //     width: 1px;
+        //     background: @salmon;
+        //     display: block;
+        //     position: absolute;
+        //     left: 45%;
+        //     // top: 491px;
+        //     z-index: 100;
+        // }
 
-        &::after {
-            height: 5px;
-            width: 5px;
-            border-radius: 50%;
-            content: '';
-            background: @salmon;
-            display: block;
-            position: absolute;
-            left: 44.85%;
-            margin-top: 550px;
-            top: 80%;
-            z-index: 100;
-        }
+        // &::after {
+        //     height: 5px;
+        //     width: 5px;
+        //     border-radius: 50%;
+        //     content: '';
+        //     background: @salmon;
+        //     display: block;
+        //     position: absolute;
+        //     left: 44.85%;
+        //     margin-top: 550px;
+        //     top: 80%;
+        //     z-index: 100;
+        // }
     }
 }

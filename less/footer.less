@@ -20,10 +20,10 @@ footer {
             color: @white;
             margin: 0;
             text-align: right;
-            padding: 60px 15% 0 0;
+            padding: 60px 15% 0 20%;
             vertical-align: middle;
             font-weight: normal;
-            font-size: 2rem;
+            font-size: 2.5rem;
             position: relative;
             &::after {
                 height: 1px;
@@ -33,7 +33,7 @@ footer {
                 display: block;
                 position: absolute;
                 left: 75.25%;
-                top: 74px;
+                top: 83px;
             }
 
             &::before {
@@ -45,7 +45,7 @@ footer {
                 display: block;
                 position: absolute;
                 left: 75.25%;
-                top: 72px;
+                top: 81px;
             }
 
         }
@@ -58,11 +58,13 @@ footer {
         font-weight: 600;
         letter-spacing: 1.5px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     p {
         font-size: 1.6rem;
         margin-bottom: 30px;
+        text-align: center;
 
         a {
             color: @black;
@@ -75,11 +77,6 @@ footer {
 
         &:last-child {
             color: @gray;
-            text-align: center;
-
-            @media @desktop {
-                text-align: left;
-            }
         }
     }
 
@@ -93,7 +90,21 @@ footer {
 
     .desktop-div {
         @media @desktop {
+            width: 49%;
+            
             padding: 0 5%;
+        }
+    }
+
+    .social {
+        font-size: 3rem;
+        
+        a {
+            color: @salmon;
+            border-bottom: none;
+            &:hover {
+                color: @purple;
+            }
         }
     }
 }

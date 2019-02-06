@@ -15,14 +15,14 @@ main {
         color: @white;
         font-family: @raleway;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 50px 5%;
 
         @media @desktop {
             width: 51%;
             height: 100%;
             text-align: right;
-            padding: 50px 15%;
+            padding: 50px 15% 0 20%;
             position: relative;
 
             &::after {
@@ -33,7 +33,7 @@ main {
                 display: block;
                 position: absolute;
                 left: 75.25%;
-                top: 55px;
+                top: 73px;
             }
 
             &::before {
@@ -45,7 +45,7 @@ main {
                 display: block;
                 position: absolute;
                 left: 75.25%;
-                top: 53px;
+                top: 71px;
             }
         }
     }
@@ -53,6 +53,7 @@ main {
     .section-text {
         font-family: @source-sans;
         font-size: 1.6rem;
+        text-align: center;
         line-height: 2;
         padding: 50px 5%;
         background: @white;
@@ -73,7 +74,8 @@ main {
                 }
 
                 &:focus {
-                    outline: none;
+                    border: 2px solid @purple;
+                    outline: 0;
                 }
             }
     
