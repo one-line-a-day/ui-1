@@ -304,7 +304,7 @@ main .section-heading {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 73px;
+    top: 86px;
   }
   main .section-heading::before {
     height: 5px;
@@ -315,7 +315,7 @@ main .section-heading {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 71px;
+    top: 84px;
   }
 }
 main .section-text {
@@ -443,7 +443,7 @@ footer h2 {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 83px;
+    top: 97px;
   }
   footer h2::before {
     height: 5px;
@@ -454,7 +454,7 @@ footer h2 {
     display: block;
     position: absolute;
     left: 75.25%;
-    top: 81px;
+    top: 95px;
   }
 }
 footer h3 {
