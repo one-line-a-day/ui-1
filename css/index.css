@@ -340,6 +340,9 @@ main .section-text form input {
 main .section-text form input::placeholder {
   color: #c6c6c6;
 }
+main .section-text form input:focus {
+  outline: none;
+}
 main .section-text form button {
   cursor: pointer;
   width: 100%;
@@ -350,6 +353,9 @@ main .section-text form button {
   border-radius: 5px;
   margin: 5px 0;
   padding: 10px;
+}
+main .section-text form button:focus {
+  outline: none;
 }
 @media (min-width: 800px) {
   main .section-text {

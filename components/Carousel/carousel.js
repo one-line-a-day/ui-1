@@ -12,19 +12,19 @@ class Carousel {
     }
 
     moveLeft() {
-        this.images[this.index].classList.remove('active');
-        if (this.index === 0) {
-            this.index = this.images.length - 1;
-        } else {
-            this.index--;
-        }
-        this.images[this.index].classList.add('active');
-        this.imgList.forEach((image, index) => {
-            if (index !== this.index) {
-                image.inactive();
+            this.images[this.index].classList.remove('active');
+            if (this.index === 0) {
+                this.index = this.images.length - 1;
+            } else {
+                this.index--;
             }
-        });
-        this.imgList[this.index].active();
+            this.images[this.index].classList.add('active');
+            this.imgList.forEach((image, index) => {
+                if (index !== this.index) {
+                    image.inactive();
+                }
+            });
+            this.imgList[this.index].active();
     }
 
     moveRight() {
