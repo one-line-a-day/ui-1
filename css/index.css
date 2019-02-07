@@ -148,6 +148,17 @@ body {
     z-index: 100;
   }
 }
+a {
+  color: #fd5d67;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+a:hover {
+  transition: all 0.25s ease;
+  color: #442587;
+  text-decoration: underline;
+}
 header {
   width: 100%;
   background: #442587;
@@ -226,8 +237,10 @@ header .header-text button {
   border-radius: 5px;
   margin: 20px 0 0;
   padding: 10px;
+  transition: all 0.25s ease;
 }
 header .header-text button:hover {
+  transition: all 0.25s ease;
   color: #442587;
   background: #ffffff;
   font-weight: 700;
@@ -472,9 +485,13 @@ footer p a {
   color: #2e2e2e;
   text-decoration: none;
   border-bottom: 1px dotted #2e2e2e;
+  transition: all 0.25s ease;
 }
 footer p a:hover {
+  color: #2e2e2e;
+  text-decoration: none;
   border-bottom: none;
+  transition: all 0.25s ease;
 }
 footer p:last-child {
   color: #c6c6c6;
@@ -507,9 +524,11 @@ footer .social a:hover {
 }
 .carousel {
   width: 100%;
-  height: 300px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
 }
 .carousel .left-btn,
@@ -521,38 +540,36 @@ footer .social a:hover {
   background-color: #fd5d67;
   opacity: 0.5;
   font-size: 4rem;
-  border-radius: 50%;
   position: absolute;
   width: 50px;
   height: 50px;
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 .carousel .left-btn:hover,
 .carousel .right-btn:hover {
   color: #fd5d67;
   background-color: #442587;
+  transition: all 0.25s ease;
 }
 .carousel .left-btn {
   top: 50%;
-  left: 15px;
+  left: 0;
   transform: translate(0, -50%);
   z-index: 100;
 }
 .carousel .right-btn {
   top: 50%;
-  right: 15px;
+  right: 0;
   transform: translate(0, -50%);
   z-index: 100;
 }
 .carousel .carousel-img {
-  position: absolute;
   width: 100%;
-  right: -100%;
-  transition: all 0.25s;
+  display: none;
 }
 .carousel .active {
-  right: 0;
-  width: 100%;
+  display: block;
 }
 .tabs {
   width: 100%;
@@ -585,9 +602,11 @@ footer .social a:hover {
   border-top-right-radius: 15px;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 .tabs .actual-tab:hover {
   background-color: #fd5d67;
+  transition: all 0.25s ease;
 }
 @media (min-width: 800px) {
   .tabs .actual-tab {
@@ -625,6 +644,7 @@ footer .social a:hover {
 }
 .tabs .tab-selected:hover {
   background-color: #442587;
+  transition: all 0.25s ease;
 }
 .tabs .tabs-content {
   width: 100%;

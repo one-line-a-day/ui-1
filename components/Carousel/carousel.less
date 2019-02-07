@@ -1,8 +1,10 @@
 .carousel {
     width: 100%;
-    height: 300px;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
 
     .left-btn, .right-btn {
@@ -13,40 +15,38 @@
         background-color: @salmon;
         opacity: .5;
         font-size: 4rem;
-        border-radius: 50%;
         position: absolute;
         width: 50px;
         height: 50px;
         cursor: pointer;
+        transition: all .25s ease;
         &:hover {
             color: @salmon;
             background-color: @purple;
+            transition: all .25s ease;
         }
     }
 
     .left-btn {
         top: 50%;
-        left: 15px;
+        left: 0;
         transform: translate(0, -50%);
         z-index: 100;
     }
 
     .right-btn {
         top: 50%;
-        right: 15px;
+        right: 0;
         transform: translate(0, -50%);
         z-index: 100;
     }
 
     .carousel-img {
-        position: absolute;
         width: 100%;
-        right: -100%;
-        transition: all 0.25s;
+        display: none;
     }
 
     .active {
-        right: 0;
-        width: 100%
+        display: block;
     }
 }

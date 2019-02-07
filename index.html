@@ -66,15 +66,14 @@
                 <div class="carousel">
                     <div class="left-btn"><</div>
                     <img src="img/phone.jpeg" alt="Woman using cellular telephone" class="carousel-img active" data-image="1">
-                    <img src="img/phone2.jpeg" alt="Phone displaying One Line a Day App" class="carousel-img" data-image="2">
-                    <!-- <img src="img/tablet.jpeg" alt="Woman using tablet" class="carousel-img" data-image="2"> -->
-                    <img src="img/laptop.jpeg" alt="Woman using laptop computer" class="carousel-img" data-image="3">
-                    <img src="img/laptop2.jpeg" alt="Laptop computer displaying One Line a Day Website" class="carousel-img" data-image="4">
+                    <img src="img/laptop.jpeg" alt="Woman using laptop computer" class="carousel-img" data-image="2">
+                    <img src="img/laptop2.jpeg" alt="Laptop computer displaying One Line a Day Website" class="carousel-img" data-image="3">
+                    <img src="img/phone2.jpeg" alt="Phone displaying One Line a Day App" class="carousel-img" data-image="4">
                     <div class="right-btn">></div>
                 </div>
                 <div class="apps">
-                    <img src="img/google-play-button.png" alt="Google Play Download Button">
-                    <img src="img/apple-button.png" alt="Apple App Store Download Button">
+                    <a href="#"><img src="img/google-play-button.png" alt="Google Play Download Button"></a>
+                    <a href="#"><img src="img/apple-button.png" alt="Apple App Store Download Button"></a>
                 </div>
             </div>
         </section>
@@ -82,18 +81,23 @@
             <h2 class="section-heading">Start Your Journal</h2>
             <div class="section-text">
                 <p>Download the mobile app, or create an account online, and start recording memories in your private journal!</p>
-                <form action="#">
+                <form action="#" method="POST">
                     <div>
-                        <label for="name" class="sr">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <label for="username" class="sr">Name:</label>
+                        <input type="text" id="username" name="username" placeholder="Your Name">
                     </div>
                     <div>
                         <label for="mail" class="sr">Email:</label>
                         <input type="email" id="mail" name="email" placeholder="Your Email Address">
                     </div>
                     <div>
+                        <label for="password" class="sr">Password:</label>
+                        <input type="password" id="mail" name="password" placeholder="Your Password">
+                    </div>
+                    <div>
                         <button type="submit">Get Started</button>
                     </div>
+                    <p>Already started a journal? <a href="#">Log in here!</a></p>
                 </form>
             </div>
         </section>
