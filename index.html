@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="components/Tabs/tabs.js" async></script>
+    <script src="components/Carousel/carousel.js" async></script>
+    <title>One Line a Day</title>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>One Line a Day</h1>
+            <h2>Years of Memories</h2>
+            <p>One Line a Day is the app version of the popular one-line-a-day journal. Your daily entries are privately stored on your device (mobile version), or safely online if you use our web-based version.</p>
+            <a href="#start"><button>Start Your Journal Now!</button></a>
+        </div>
+        <div class="header-img">
+            <img src="img/journal.jpeg" alt="Photo of a phone resting on a journal">
+        </div>
+    </header>
+    <main>
+        <!-- <section>
+            <h2 class="section-heading">What is one line a day?</h2>
+            <p class="section-text">One Line a Day is an app that allows you to keep a journal in which you write a single line every day. Your daily entries are recorded</p>
+        </section> -->
+        <section>
+            <h2 class="section-heading">Manage your one line journal</h2>
+            <div class="section-text">
+                <p>With our app, you can perfectly manage your one-line journal</p>
+                <div class="tabs">
+                    <div class="actual-tabs">
+                        <div class="actual-tab tab-selected" data-tab="1"><p>Write</p></div>
+                        <div class="actual-tab" data-tab="2"><p>Review</p></div>
+                        <div class="actual-tab" data-tab="3"><p>Update</p></div>
+                        <div class="actual-tab" data-tab="4"><p>Delete</p></div>
+                    </div>
+                <div class="tabs-content">
+                    <div class="tabs-item tabs-item-selected" data-tab="1">
+                        <p>Our app lets you write a journal entry each day. Write a funny quote, crazy milestone, or what you ate for dinner! You can choose to set daily reminders to sign in to log your entry.</p>
+                    </div>
+                    <div class="tabs-item" data-tab="2">
+                        <p>Our unique timeline allows you to review previous entries. You can search day by day or use our tools to find a specific date. Each day will present your previous entries that were written on the same day in years past.</p>
+                    </div>
+                    <div class="tabs-item" data-tab="3">
+                        <p>Did you make a mistake in one of your previous entries? Our app lets you update any entry in your log!</p>
+                    </div>
+                    <div class="tabs-item" data-tab="4">
+                        <p>Find an entry that makes you think, "What was I thinking when I wrote that??" Easily delete any regretful entries that you've ever made.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-heading">Post your daily line anywhere</h2>
+            <div class="section-text">
+                <p>Keep your goal of writing one line a day conveniently by using our desktop site or our mobile app!</p>
+                <div class="carousel">
+                    <div class="left-btn"><</div>
+                    <img src="img/phone.jpeg" alt="Woman using cellular telephone" class="carousel-img active" data-image="1">
+                    <img src="img/laptop.jpeg" alt="Woman using laptop computer" class="carousel-img" data-image="2">
+                    <img src="img/laptop2.jpeg" alt="Laptop computer displaying One Line a Day Website" class="carousel-img" data-image="3">
+                    <img src="img/phone2.jpeg" alt="Phone displaying One Line a Day App" class="carousel-img" data-image="4">
+                    <div class="right-btn">></div>
+                </div>
+                <div class="apps">
+                    <a href="#"><img src="img/google-play-button.png" alt="Google Play Download Button"></a>
+                    <a href="#"><img src="img/apple-button.png" alt="Apple App Store Download Button"></a>
+                </div>
+            </div>
+        </section>
+        <section id="start">
+            <h2 class="section-heading">Start Your Journal</h2>
+            <div class="section-text">
+                <p>Download the mobile app, or create an account online, and start recording memories in your private journal!</p>
+                <form>
+                    <div>
+                        <label for="name" class="sr">Username:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Username" required>
+                    </div>
+                    <div>
+                        <label for="mail" class="sr">Email:</label>
+                        <input type="email" id="mail" name="mail" placeholder="Your Email Address" required>
+                    </div>
+                    <div>
+                        <label for="password" class="sr">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Your Password" required>
+                    </div>
+                    <div>
+                        <button onclick="return sendPostRequest()">Get Started</button>
+                    </div>
+                    <p>Already started a journal? <a href="https://distracted-swanson-c60213.netlify.com/">Log in here!</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Questions? Send us a message!</h2>
+        <div class="desktop-div">
+        <h3>Email</h3>
+        <p><a href="mailto:info@one-line-a-day.com">info@one-line-a-day.com</a></p>
+        <h3>Social</h3>
+        <p class="social">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-tumblr-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i> </a>
+        </p>
+        <p>&copy; 2019 One Line A Day</p>
+        </div>
+    </footer>
+    <script>
+            function sendPostRequest() {
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://one-line-a-day-backend.herokuapp.com/api/users/register', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.onload=function(event){
+                    window.location.href = "https://distracted-swanson-c60213.netlify.com/";
+                };
+                const username = document.getElementById("name").value;
+                const password = document.getElementById("password").value;
+                const email = document.getElementById("mail").value;
+                xhr.send(JSON.stringify({
+                    username,
+                    password,
+                    email
+                }));
+                return false;
+            }
+        </script>
+</body>
+</html>

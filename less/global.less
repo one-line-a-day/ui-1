@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+
+    @media @desktop {
+        &::before {
+            height: 100%;
+            content: '';
+            width: 1px;
+            background: @salmon;
+            display: block;
+            position: absolute;
+            left: 45%;
+            // top: 491px;
+            z-index: 100;
+        }
+    }
+}
+
+a {
+    color: @salmon;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .25s ease;
+    &:hover {
+        transition: all .25s ease;
+        color: @purple;
+        text-decoration: underline;
+    }
+}

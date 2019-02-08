@@ -1,0 +1,52 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    .left-btn, .right-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: @purple;
+        background-color: @salmon;
+        opacity: .5;
+        font-size: 4rem;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .25s ease;
+        &:hover {
+            color: @salmon;
+            background-color: @purple;
+            transition: all .25s ease;
+        }
+    }
+
+    .left-btn {
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        z-index: 100;
+    }
+
+    .right-btn {
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        z-index: 100;
+    }
+
+    .carousel-img {
+        width: 100%;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
