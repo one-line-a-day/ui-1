@@ -81,23 +81,23 @@
             <h2 class="section-heading">Start Your Journal</h2>
             <div class="section-text">
                 <p>Download the mobile app, or create an account online, and start recording memories in your private journal!</p>
-                <form action="#" method="POST">
+                <form>
                     <div>
-                        <label for="username" class="sr">Name:</label>
-                        <input type="text" id="username" name="username" placeholder="Your Name">
+                        <label for="name" class="sr">Username:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Username" required>
                     </div>
                     <div>
                         <label for="mail" class="sr">Email:</label>
-                        <input type="email" id="mail" name="email" placeholder="Your Email Address">
+                        <input type="email" id="mail" name="mail" placeholder="Your Email Address" required>
                     </div>
                     <div>
                         <label for="password" class="sr">Password:</label>
-                        <input type="password" id="mail" name="password" placeholder="Your Password">
+                        <input type="password" id="password" name="password" placeholder="Your Password" required>
                     </div>
                     <div>
-                        <button type="submit">Get Started</button>
+                        <button onclick="return sendPostRequest()">Get Started</button>
                     </div>
-                    <p>Already started a journal? <a href="#">Log in here!</a></p>
+                    <p>Already started a journal? <a href="https://distracted-swanson-c60213.netlify.com/login">Log in here!</a></p>
                 </form>
             </div>
         </section>
@@ -117,5 +117,24 @@
         <p>&copy; 2019 One Line A Day</p>
         </div>
     </footer>
+    <script>
+            function sendPostRequest() {
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://one-line-a-day-backend.herokuapp.com/api/users/register', true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.onload=function(event){
+                    window.location.href = "https://distracted-swanson-c60213.netlify.com/";
+                };
+                const username = document.getElementById("name").value;
+                const password = document.getElementById("password").value;
+                const email = document.getElementById("mail").value;
+                xhr.send(JSON.stringify({
+                    username,
+                    password,
+                    email
+                }));
+                return false;
+            }
+        </script>
 </body>
 </html>
